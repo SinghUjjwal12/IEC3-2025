@@ -44,6 +44,26 @@
             nav>.active>a {
                 background-color: rgb(66, 165, 245);
             }
+
+            .glow {
+                color: red;
+                font-weight: bold;
+                animation: pulseGlow 1.5s infinite;
+            }
+
+            @keyframes pulseGlow {
+                0% {
+                    text-shadow: 0 0 5px red;
+                }
+
+                50% {
+                    text-shadow: 0 0 15px red;
+                }
+
+                100% {
+                    text-shadow: 0 0 5px red;
+                }
+            }
         </style>
 
 </head>
@@ -274,7 +294,9 @@
                             <td>
                                 <del>July 10, 2025</del>
                                 &nbsp;&rarr;&nbsp;
-                                <span style="color: black;">July 25, 2025</span>
+                                <del>July 25, 2025</del>
+                                &nbsp;&rarr;&nbsp;
+                                <span class="glow">August 7, 2025 (Hard Deadline)</span>
                             </td>
                         </tr>
                         <tr>
@@ -282,7 +304,9 @@
                             <td>
                                 <del>July 20, 2025</del>
                                 &nbsp;&rarr;&nbsp;
-                                <span style="color: black;">August 05, 2025</span>
+                                <del>August 05, 2025</del>
+                                &nbsp;&rarr;&nbsp;
+                                <span style="color: black;">August 14, 2025</span>
                             </td>
                         </tr>
                         <tr>
@@ -290,7 +314,9 @@
                             <td>
                                 <del>July 27, 2025</del>
                                 &nbsp;&rarr;&nbsp;
-                                <span style="color: black;">August 10, 2025</span>
+                                <del>August 10, 2025</del>
+                                &nbsp;&rarr;&nbsp;
+                                <span style="color: black;">August 17, 2025</span>
                             </td>
                         </tr>
                         <tr>
@@ -300,6 +326,9 @@
                     </tbody>
                 </table>
             </center>
+
+
+
 
         </div>
     </div>
