@@ -31,6 +31,32 @@
         <link rel="stylesheet" href="css/foot.css">
         <link href="css/commitee.css" rel="stylesheet" type="text/css">
         <style>
+            .glow {
+                color: blue;
+                font-weight: bold;
+                text-shadow: 0 0 5px #00f,
+                    0 0 10px #00f,
+                    0 0 20px #00f,
+                    0 0 40px #00f;
+                animation: glowPulse 1.5s infinite alternate;
+            }
+
+            @keyframes glowPulse {
+                from {
+                    text-shadow: 0 0 5px #00f,
+                        0 0 10px #00f,
+                        0 0 20px #00f,
+                        0 0 40px #00f;
+                }
+
+                to {
+                    text-shadow: 0 0 10px #4da6ff,
+                        0 0 20px #4da6ff,
+                        0 0 40px #4da6ff,
+                        0 0 80px #4da6ff;
+                }
+            }
+
             .affix {
                 top: 0;
                 width: 100%;
@@ -161,35 +187,61 @@
                 &nbsp; &nbsp;
         </MARQUEE> -->
 
+    <style>
+        /* Professional red glowing text */
+        .glow-red {
+            color: red;
+            font-weight: bold;
+            text-shadow: 0 0 5px #ff0000,
+                0 0 10px #ff0000,
+                0 0 20px #ff0000,
+                0 0 40px #ff4d4d;
+            animation: glowPulseRed 1.5s infinite alternate;
+        }
+
+        @keyframes glowPulseRed {
+            from {
+                text-shadow: 0 0 5px #ff0000,
+                    0 0 10px #ff0000,
+                    0 0 20px #ff0000,
+                    0 0 40px #ff4d4d;
+            }
+
+            to {
+                text-shadow: 0 0 10px #ff4d4d,
+                    0 0 20px #ff4d4d,
+                    0 0 40px #ff1a1a,
+                    0 0 80px #ff1a1a;
+            }
+        }
+
+        .sponsor img {
+            height: 7rem;
+        }
+    </style>
+
     <marquee behavior="alternate"
-        style="color: red; font-weight: bold;font-size: 20px; font-size: 20px;font-family: 'Times New Roman', Times, serif ">
-        &nbsp; &nbsp; &nbsp; <a href="https://cmt3.research.microsoft.com/ICE32025" style="color: blue;" target="_blank"
-            rel="noopener noreferrer">Paper
-            Submission Link is Live</a> &nbsp;
-        <!-- <a href="#" target="_blank" style=" color: red; font-weight: bold;">Conference
-                Schedule(TBA) </a> -->
-        <!-- &nbsp; | &nbsp; <a href="speaker-keynote.html" style="color:blue;">Keynote Speakers
-                (TBA)</a>&nbsp; -->
+        style="font-weight: bold;font-size: 20px;font-family: 'Times New Roman', Times, serif;">
+
+        &nbsp; &nbsp; &nbsp;
+        <a href="https://drive.google.com/file/d/10pT7IQ1ZJfwSyekgOWCQbUW-Pep_RLjZ/view?usp=sharing" class="glow-red"
+            target="_blank" rel="noopener noreferrer">Tentative Program Schedule</a>&nbsp;
+
+        &nbsp;|&nbsp;<a href="https://cmt3.research.microsoft.com/ICE32025" style="color: blue;" target="_blank"
+            rel="noopener noreferrer">Paper Submission Link is Live</a>&nbsp;
+
         &nbsp;|&nbsp;<a href="https://drive.google.com/file/d/1cl36mVKpZOLDzywN8JEzwiC69cCkZR_P/view?usp=drive_link"
-            style="color:blue;">Conference Brochure</a>&nbsp;
-        <!-- <a href="#" data-toggle="modal" data-target="#flipFlop">
-                <img id="ContentPlaceHolder2_ContentPlaceHolder3_GridView1_Image1_3" src="upimg/new.gif"> Date Extension
-                Notice
-            </a> -->
-
-
-
-        <!-- <a href="doc/Accommodation.pdf" style=" font-weight: bold;">Hotels and Campus Accommodation
-                for Authors &nbsp; |&nbsp; -->
+            style="color:blue;" target="_blank" rel="noopener noreferrer">Conference Brochure</a>&nbsp;
     </marquee>
+
 
     <MARQUEE behavior="alternate"
         style="color: red; font-weight: bold;font-size: 20px; font-size: 20px;font-family: 'Times New Roman', Times, serif ">
         Our Sponsors &nbsp;
-        <!-- <a href=" http://www.oil-india.com/" target="_blank"><img src="upimg/oilIndia.png"></a> -->
+        <a href=" /" class="sponsor"><img src="upimg/FTlogo.jpg"></a>
         &nbsp;
-        <!-- <a href="https://ias.ieee.org/" target="_blank"><img src="upimg/IAS.gif"></a> &nbsp; -->
-        <a href="http://www.ieeeup.org/" target="_blank"><img src="upimg/ieeeup.png"></a>
+        <a href="/" class="sponsor"><img src="upimg/Vjlogo.jpg"></a> &nbsp;
+        <!-- <a href="http://www.ieeeup.org/" target="_blank"><img src="upimg/ieeeup.png"></a> -->
     </MARQUEE>
 
 
@@ -371,6 +423,8 @@
                     </p>
                 </center>
                 <ul style="list-style: square;">
+                    <li><b><a href="https://drive.google.com/file/d/10pT7IQ1ZJfwSyekgOWCQbUW-Pep_RLjZ/view?usp=sharing"
+                                class="glow-red" target="_blank" rel="noopener noreferrer">Tentative Program Schedule </a></b></li>
                     <li><b><a href="papers-sub.html"> Paper Submission link is now open.</a></b></li>
                     <li style="color: red;"><b> Notification of Paper Acceptance is under Process</b></li>
 
